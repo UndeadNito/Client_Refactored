@@ -38,6 +38,7 @@
             this.filterButton = new System.Windows.Forms.Button();
             this.AddUserButton = new System.Windows.Forms.Button();
             this.RefreshButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,11 +148,21 @@
             this.RefreshButton.UseVisualStyleBackColor = true;
             this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(476, 385);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(181, 40);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Duble tap on cell to see \r\nadditional info about user";
+            // 
             // WorkForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.AddUserButton);
             this.Controls.Add(this.filterButton);
@@ -186,5 +197,6 @@
         private Button filterButton;
         private Button AddUserButton;
         private Button RefreshButton;
+        private Label label3;
     }
 }
